@@ -12,3 +12,21 @@ services:
     volumes:
       - .:/app
     restart: always
+    depends_on:
+      - db
+
+  db:
+    image: mysql:8
+    container_name: express-api_db
+    environment:
+      MYSQL_ROOT_PASSWORD: "root"
+      MYSQL_USER: "admin"
+      MYSQL_PASSWORD: "adminpass1"
+    volumes:
+      - ./mysql/conf.d:/etc/mysql/conf.d
+      - ./mysql/data:/var/lib/mysql
+      - ./mysql/tmp/data:/tmp/data
+      - ./mysql/log:/var/log/mysql
+    command: mysqld --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    ports:
+      - "33306:3306"
