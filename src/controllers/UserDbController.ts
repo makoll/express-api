@@ -1,6 +1,6 @@
 import { JsonController, Body, Post } from "routing-controllers";
 import { getRepository, Raw } from "typeorm";
-import User from "../entities/User";
+import User from "@/entities/User";
 
 @JsonController("/userdbs")
 export class UserDbController {

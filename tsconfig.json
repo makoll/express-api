@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "rootDir":"./src/",
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    },
     "sourceMap": true,
     "target": "es6",
     "esModuleInterop": true,
