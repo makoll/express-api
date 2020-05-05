@@ -4,7 +4,6 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node dist/index.js",
     "dev": "nodemon -L",
     "ts-node": "ts-node",
     "tsc": "tsc"
@@ -29,10 +28,8 @@
     "@types/express": "^4.17.6",
     "@types/multer": "^1.4.3",
     "@types/mysql": "^2.15.10",
-    "@types/webpack": "^4.41.12",
     "nodemon": "^2.0.3",
     "ts-node": "^8.10.1",
-    "typescript": "^3.8.3",
-    "webpack": "^4.43.0"
+    "typescript": "^3.8.3"
   }
 }
