@@ -1,5 +1,5 @@
 # ベースイメージはお好みで普通のでもalpineでも。
-FROM node:8.12.0-slim
+FROM mhart/alpine-node:14
 ENV APP_ROOT /app/
 
 WORKDIR $APP_ROOT
